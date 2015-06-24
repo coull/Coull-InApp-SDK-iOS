@@ -33,7 +33,11 @@ import the SDK header in your View Controller (or App Delegate)
 	#import "CoullSDK/CoullManager.h"
 
 
-`initialize the SDK` - pubID provided by Coull. For test purposes you can pass `nil`
+`initialize the SDK` - use the publisher ID provided by Coull, e.g.
+
+	Static NSString *pubID = @"13350";//use your PubID
+
+For test purposes you can pass `nil`
 
 	self.sdkManager = [[CoullManager alloc] initWithDelegate:self publisherId:pubID];
 
