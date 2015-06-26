@@ -55,6 +55,8 @@ Now use one of the three init calls. There's one for each Ad type:
 
 `create an interstitial ad` - This call also allows you to pass in your own Ad Tag rather than using Coull's. The interestitial Ad doesn't require you to pass in the AdContainer as it will create and manage its own full screen Ad container.
 
+**Please note. Ideally, you should check for connectivity before calling an interstitial ad.**
+
 	[self.sdkManager createInterstitialAd:(NSString*)adTag];
 	
 	
